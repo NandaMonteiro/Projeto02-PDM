@@ -7,10 +7,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.io.IOException;
+import java.net.Socket;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText senha;
     private Button button;
+
+    private Usuario usuario;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    if (senha.equals("123")) {
+                    if (senha.equals(usuario.getSenha())) {
                         Intent intent = new Intent(MainActivity.this, segundaTela.class);
                         startActivity(intent);
                     }

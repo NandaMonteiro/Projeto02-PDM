@@ -27,6 +27,7 @@ public class TelaChat extends AppCompatActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View v) {
+
         postMessage();
     }
 

@@ -23,10 +23,7 @@ public class segundaTela extends AppCompatActivity {
 
         opcoes = new ArrayList<String>();
 
-        opcoes.add("Navegar na Internet");
-        opcoes.add("Fazer uma ligação");
-        opcoes.add("Sobre");
-        opcoes.add("Sair");
+
 //        String[] contatos = new String[]{"fernanda", "nanda", "flavia"};
 
 
